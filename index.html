@@ -5,35 +5,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Quiz App</title>
-        <link rel="stylesheet" href="../Assets/css/style.css"/>
+        <link rel="stylesheet" href="./assets/css/style.css"/>
     </head>
 
     <body>
-        <header>
-
-        </header>
-
-        <main>
-            <div class="container">
-                <div class="question-container" class="hide">
-                    <div id="question">Question</div>
-                    <div id="answer-buttons" class="btn-grid">
-                        <button class="btn">Answer 1</button>
-                        <button class="btn">Answer 2</button>
-                        <button class="btn">Answer 3</button>
-                        <button class="btn">Answer 4</button>
+        <div class="wrapper">
+            <nav class="nav-container">
+                <nav class="nav-items">
+                    <p id="score">Your High Score Here</p>
+                    <p id="count-down">50</p>
+                </nav>
+            </nav>
+                <div class="container">
+                    <div class="quiz-grid">
+                        <div id="quiz">
+                            <h1>JavaScript Quiz App</h1>
+                            <div class="quiz-header">
+                                <p id="progress">Question x of y</p>
+                            </div>
+                            <p id="question">What are you doing?</p>
+                            <div class="buttons">
+                                <button class="btn" id="btn0"> 
+                                    A.<span id="choice0"></span>
+                                </button>
+                                <button class="btn" id="btn1">A. 
+                                    B.<span id="choice1"></span>
+                                </button>
+                                <button class="btn" id="btn2">A. 
+                                    C.<span id="choice2"></span>
+                                </button>
+                                <button class="btn" id="btn3">A. 
+                                    D.<span id="choice3"></span>
+                                </button>
+                            </div>
+                            <hr>
+                            <footer>
+                                <p>Quiz app made by me!</p>
+                            </footer>
+                        </div>
                     </div>
-                    <div class="controls">
-                        <button id="start-btn" class="start-btn btn">Start</button>
-                        <button id="next-btn" class="next-btn btn">Next</button>
-                    </div>
-                
-            </div>
-        </main>
+        </div>
         <script src="../Assets/js/script.js"></script>
     </body>
-
-    <footer>
-
-    </footer>
 </html>
