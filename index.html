@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Quiz App</title>
-        <link rel="stylesheet" href="./assets/css/style.css"/>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+</head>
 
-    <body>
-        <div class="wrapper">
-            <nav class="nav-container">
-                <nav class="nav-items">
-                    <p id="score">Your High Score Here</p>
-                    <p id="count-down">50</p>
-                </nav>
-            </nav>
-                <div class="container">
-                    <div class="quiz-grid">
-                        <div id="quiz">
-                            <h1>JavaScript Quiz App</h1>
-                            <div class="quiz-header">
-                                <p id="progress">Question x of y</p>
-                            </div>
-                            <p id="question">What are you doing?</p>
-                            <div class="buttons">
-                                <button class="btn" id="btn0"> 
-                                    A.<span id="choice0"></span>
-                                </button>
-                                <button class="btn" id="btn1">A. 
-                                    B.<span id="choice1"></span>
-                                </button>
-                                <button class="btn" id="btn2">A. 
-                                    C.<span id="choice2"></span>
-                                </button>
-                                <button class="btn" id="btn3">A. 
-                                    D.<span id="choice3"></span>
-                                </button>
-                            </div>
-                            <hr>
-                            <footer>
-                                <p>Quiz app made by me!</p>
-                            </footer>
-                        </div>
+<body>
+    <div class="wrapper">
+        
+        <!--Page Header-->
+        <header>
+            <h1 href="#" id="score">View Highscores</h1>
+            <h1 id="count-down">Time: <span class="timer-tracker__countdown">50</span></h1>
+        </header>
+        
+        <!--Quiz Content-->
+        <main class="container">
+            <div class="start-page">
+                <p class="start-prompt">Click the start button to begin answering questions!</p>
+                <button class="start-btn">Start!</button>
+            </div>
+            
+            <div class="quiz-box">
+                <div id="quiz">
+                    <h1>JavaScript Quiz App</h1>
+                    <div class="quiz-header">
+                        <p id="progress">Question x of y</p>
                     </div>
-        </div>
-        <script src="../Assets/js/script.js"></script>
-    </body>
+                    <p id="question">What is a question?</p>
+                    <div class="buttons">
+                        <button class="btn" id="btn0"> 
+                            A.<span id="choice0"></span>
+                        </button>
+                        <button class="btn" id="btn1">A. 
+                            B.<span id="choice1"></span>
+                        </button>
+                        <button class="btn" id="btn2">A. 
+                            C.<span id="choice2"></span>
+                        </button>
+                        <button class="btn" id="btn3">A. 
+                            D.<span id="choice3"></span>
+                        </button>   
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!--Page Footer-->
+        <footer>
+            <p>Quiz app made by me!</p>
+        </footer>
+
+    </div>
+    <script src="../Assets/js/script.js"></script>
+</body>
 </html>
