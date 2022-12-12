@@ -1,12 +1,13 @@
-*   {
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #f8f9ff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    background-color: #fdfdfd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
 }
 
 .wrapper {
@@ -21,17 +22,16 @@ header {
     align-items: center;
     background-color: violet;
     color: white;
-    padding: 2vh;
+    padding: 20px;
+    margin: 20px;
 }
 
 #score {
     float: left
-    margin: 4rem;
 }
 
 #count-down {
     float: right;
-    margin: 4rem;
 }
 
 /*starting page*/
@@ -40,20 +40,22 @@ header {
 
 /*quiz content container*/
 .container {
-    max-width: 900px;
+    display: flex;
+    height: 100vh;
+    max-width: 100vh;
     margin: 0 auto;
     padding: 0 2rem;
-    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .quiz-box {
-    width: 600px;
-    height: 500px;
+    display: flex;
+    align-items: center;
+    width: 800px;
+    height: 800px;
     margin: 0 auto;
-    background-color: ;
+    background-color: cornflowerblue;
     padding: 1rem 5rem 5rem 5rem;
     border: 3px solid cornflowerblue;
     border-radius: 5px;
@@ -93,7 +95,6 @@ header {
 
 .buttons {
     margin: 1.5rem 0 4rem 0;
-
 }
 
 .btn {
