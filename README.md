@@ -1,5 +1,4 @@
-## Title
-Javascript Coding Quiz
+## Javascript Coding Quiz
 
 ## Description
 This application was built with html and css while the functionality is done with javascript.
